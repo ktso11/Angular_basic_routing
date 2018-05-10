@@ -1,0 +1,7 @@
+#square {
+    background-color: gray;
+    height: 11em;
+    width: 11em;
+    position: relative;
+    margin: 0 auto;
+}

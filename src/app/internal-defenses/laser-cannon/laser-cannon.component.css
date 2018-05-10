@@ -1,0 +1,9 @@
+#laser{
+    height: 2em;
+    width: 2em;
+    background-color: red;
+    position: absolute;
+    left: 4.5em;
+    top: 4.5em;
+
+}
