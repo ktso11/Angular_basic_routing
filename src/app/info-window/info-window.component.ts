@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import {ActivatedRoute} from '@angular/router';
-// import 'rxjs/add/operator/toPromise';
+
 
 @Component({
   selector: 'app-info-window',
@@ -11,6 +11,8 @@ import {ActivatedRoute} from '@angular/router';
 export class InfoWindowComponent implements OnInit {
   dataBanks: any;
   turretNumber: number;
+
+
   constructor(
     private http:Http,
     private route: ActivatedRoute
@@ -24,8 +26,8 @@ export class InfoWindowComponent implements OnInit {
   findTurret(turretNumber){
     console.log(turretNumber);
     this.http.get('http://localhost:3000/api/turret/' + turretNumber)
-    .toPromise()
-    .then(response => this.dataBanks = response.json());
+ 
+    .subscribe(response => this.dataBanks = response.json());
   }
 
 
