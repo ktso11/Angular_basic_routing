@@ -4,7 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TieFighterComponent } from './tie-fighter/tie-fighter.component';
 import { InfoWindowComponent } from './info-window/info-window.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module'
   imports: [
     BrowserModule,
     InternalDefensesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
